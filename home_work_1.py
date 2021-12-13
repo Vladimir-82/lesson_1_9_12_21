@@ -1,5 +1,9 @@
 from random import randint as rand
 
+var = rand(100, 999)
+print(f'Число = {var}')
+print(f'Сумма чисел равна {var // 100 + var % 100 // 10 + var % 10}')
+
 # def func(arg):
 #
 #     arg = str(arg)
@@ -13,8 +17,8 @@ from random import randint as rand
 # print('sum =', func(var))
 
 
-def func(arg):
-    return sum([int(i) for i in str(arg)])
+# def func(arg):
+#     return sum([int(i) for i in str(arg)])
 
 # def func(arg):
 #     return sum(map(int, str(arg)))
@@ -22,9 +26,9 @@ def func(arg):
 
 #
 #
-var = rand(100, 999)
-print('number:', var)
-print('sum =', func(var))
+# var = rand(100, 999)
+# print('number:', var)
+# print('sum =', func(var))
 
 # sum = ''
 # first = rand(0, 9)
