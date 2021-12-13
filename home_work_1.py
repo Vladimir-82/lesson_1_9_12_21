@@ -1,4 +1,8 @@
 from random import randint as rand
+from math import fsum
+# var = rand(100, 999)
+# print(var)
+# print(sum(map(int, str(var))))
 
 var = rand(100, 999)
 print(f'Число = {var}')
