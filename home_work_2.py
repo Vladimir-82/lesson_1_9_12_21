@@ -1,23 +1,23 @@
 # ex 3 calculator
 
-# num1 = float(input('Input first number: '))
-# operand = str(input('Input operand (+,-,*,/,//,%): '))
-# num2 = float(input('Input second number: '))
-#
-# if operand == '+':
-#     print(f'Ответ: {num1 + num2}')
-# elif operand == '-':
-#     print(f'Ответ: {num1 - num2}')
-# elif operand == '*':
-#     print(f'Ответ: {num1 * num2}')
-# elif operand == '/':
-#     print(f'Ответ: {num1 / num2}')
-# elif operand == '//':
-#     print(f'Ответ: {num1 // num2}')
-# elif operand == '%':
-#     print(f'Ответ: {num1 % num2}')
-# else:
-#     print('Unknown operand')
+num1 = float(input('Input first number: '))
+operand = str(input('Input operand (+,-,*,/,//,%): '))
+num2 = float(input('Input second number: '))
+
+if operand == '+':
+    print(f'Ответ: {num1 + num2}')
+elif operand == '-':
+    print(f'Ответ: {num1 - num2}')
+elif operand == '*':
+    print(f'Ответ: {num1 * num2}')
+elif operand == '/':
+    print(f'Ответ: {num1 / num2}')
+elif operand == '//':
+    print(f'Ответ: {num1 // num2}')
+elif operand == '%':
+    print(f'Ответ: {num1 % num2}')
+else:
+    print('Unknown operand')
 
 
 
