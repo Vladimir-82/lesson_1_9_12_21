@@ -93,7 +93,7 @@
 # print('point in the circle' if x ** 2 + x ** 2 <= radius ** 2 else 'point not in the circle')
 
 
-# ex4 point in the circle
+# ex4 password
 
 '''
 пароль доступа к сейфу состоит из трех равных частей, состоящих их трех символов. дверь будет открыта
