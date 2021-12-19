@@ -1,3 +1,4 @@
+#homework3
 string = 'school'
 
 print(f'третий символ - {string[2]}')
