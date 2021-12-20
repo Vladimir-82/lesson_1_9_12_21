@@ -13,13 +13,11 @@
 #     print(string[::-1])
 #     print(string.isdigit())
 
-string = 'на ворован   '
+string = 'кобан упал и лапу на бок'
 strp = string.strip()
 splt = strp.split(' ')
-print(splt)
 
 res = ''.join(splt)
-print(res)
 
 if res == res[::-1]:
     print('строка является полиндромом')
