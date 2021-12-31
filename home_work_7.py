@@ -7,9 +7,14 @@
 #     if len(splt[i]) > maxx:
 #         maxx = len(splt[i])
 #         res = splt[i]
-#
 # print(res)
 
-
-#ex1
-string = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
+#ex2
+string = 'Lorem Ipsum? is simply dummy text of the printing, and typesetting industry!'
+new_string = ''
+for i in string:
+    if i.isalpha():
+        new_string += i
+    if i == ' ':
+        new_string += i
+print(new_string.split(' '))
