@@ -67,7 +67,7 @@ from random import randint as rand
 
 # ex_6
 vowels = 'aeiou'
-string = 'HjkLMeRvYYbb'
+string = 'HjkLMeRvYYbbcg'
 counter_vowels = 0
 counter_consts = 0
 
@@ -84,12 +84,18 @@ print(f'Букв в слове: {len(list(string))}')
 upp_couple = 0
 low_couple = 0
 for i in range(len(string) - 1):
+    if len(string) <= 1:
+        break
     if string[:2].islower():
         low_couple += 1
-    if string[:2].isupper():
+        string = string[2:]
+        continue
+    elif string[:2].isupper():
         upp_couple += 1
-
-    string = string[1:]
+        string = string[2:]
+        continue
+    else:
+        string = string[1:]
 
 print(f'Пар в верхнем регистре: {upp_couple}')
 print(f'Пар в нижнем регистре: {low_couple}')
