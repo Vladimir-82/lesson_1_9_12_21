@@ -18,11 +18,22 @@
 #
 #     print(digits + sort_str)
 
-while True:
-    string = input()
-    open('test_3.txt', 'w+').write(string)
-    if string == '':
-        break
-with open("test_3.txt") as file:
-    res = file.read()
-    print(res)
+
+# file = open('test_3.txt', 'w+')
+# while True:
+#     string = input()
+#     if string == '':
+#         break
+#     file.write(string + '\n')
+# file.close()
+#
+# with open("test_3.txt") as file:
+#     print(*file)
+
+
+file = open('test_3.txt', 'r').readlines()
+counter = 0
+for num, string in enumerate(file):
+    print(f'Число букв в строке {num + 1} - {len(string)}')
+    counter += 1
+print(f'Всего строк - {counter}')
