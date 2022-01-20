@@ -16,4 +16,6 @@ for el in words:
 for el in digits:
     file.write(str(el) + '\n')
 
+
 print('tratata')
+print('difff')

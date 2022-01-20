@@ -36,4 +36,5 @@ counter = 0
 for num, string in enumerate(file):
     print(f'Число букв в строке {num + 1} - {len(string)}')
     counter += 1
+
 print(f'Всего строк - {counter}')
