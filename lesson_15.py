@@ -61,14 +61,21 @@
 #
 # print(func(2, 9))
 
-def func(*args):
-    res = [i.lower() for i in args]
-    if 'cat' in res:
-        return True
-    else:
-        return False
+# def func(*args):
+#     res = [i.lower() for i in args]
+#     if 'cat' in res:
+#         return True
+#     else:
+#         return False
+#
+# print(func('feffe', 'gtrgtr', 'caT'))
 
-print(func('feffe', 'gtrgtr', 'caT'))
+
+func = lambda x: x[0]
+
+symb = 'a'
+print(True if func('adf') == symb else False)
+
 
 
 
