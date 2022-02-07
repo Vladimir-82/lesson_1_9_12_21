@@ -71,13 +71,37 @@
 # print(func('feffe', 'gtrgtr', 'caT'))
 
 
-func = lambda x: x[0]
+# func = lambda x: x[0]
+#
+# symb = 'a'
+# print(True if func('adf') == symb else False)
 
-symb = 'a'
-print(True if func('adf') == symb else False)
+# import time
+#
+# def time_track(func):
+#     def surogate(*args):
+#         start = time.time()
+#         result = func(*args)
+#         stop = time.time()
+#         print(stop - start)
+#         return result
+#     return surogate
+#
+#
+# @time_track
+# def mult(*args):
+#     res = 1
+#     for arg in args:
+#         res *= arg ** 5000
+#     return res
+#
+# print(mult(34553433, 45454545, 324343, 66543))
 
 
 
-
-
+# files = ['python.png', 'qwerty.py', 'stepik.png', 'beegeek.org', 'windows.pnp', 'pen.txt', 'phone.py', 'book.txT', 'board.pNg', 'keyBoard.jpg', 'Python.PNg', 'apple.jpeg', 'png.png', 'input.tXt', 'split.pop', 'solution.Py', 'stepik.org', 'kotlin.ko', 'github.git']
+# res = {i.lower() for i in files if i[-3:].lower() == 'png'}
+#
+#
+# print(*sorted(res))
 
