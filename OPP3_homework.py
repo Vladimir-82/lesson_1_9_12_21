@@ -52,9 +52,6 @@ class CountryHouse(House):
         self.__class__.has_garden = True
         print('Мы выростили сад!')
 
-    def make_remont(self):
-        pass
-
 
 class Flat(House):
     has_gas = True
