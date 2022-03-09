@@ -19,3 +19,8 @@ for element in data_list:
         else:
             cursor.execute("""INSERT INTO tab_1(col_1) VALUES(?)""", ('Нечетное',))
     conn.commit()
+
+if cursor.execute("""SELECT COUNT(col_1) FROM tab_2""").fetchall()[0][0] > 5:
+    cursor.execute("""DELETE FROM tab_1 WHERE id=1""")
+else:
+    cursor.execute("""UPDATE tab_1 SET col_1='Hello' WHERE id=1""")
