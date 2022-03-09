@@ -100,6 +100,7 @@ print(obj_2.is_en_letter('s'))
 
 print(obj_2.letters_num())
 AlphabetEng.examle()
+obj_2.print_()
 print(__name__)
 
 
