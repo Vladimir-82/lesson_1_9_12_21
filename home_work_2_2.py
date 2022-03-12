@@ -6,16 +6,19 @@ cursor = conn.cursor()
 cursor.execute('''CREATE TABLE IF NOT EXISTS tab_1 (id INTEGER PRIMARY KEY AUTOINCREMENT, col_1 INTEGER)''')
 
 class Base:
-    def method(self, first=None, second=None, third=None):
-        if first == None and second == None and third == None:
+    def method(self, *args):
+        params = [*args]
+        print(params)
+        if len(params) == 1:
             cursor.execute("""INSERT INTO tab_1(col_1) VALUES(3)""")
-        elif first != None and second != None and third == None:
-            if isinstance(second, int):
+        elif len(params) == 2:
+            if isinstance(params[1], int):
                 cursor.execute("""DELETE FROM tab_1 WHERE id=1""")
-        elif first != None and second != None and isinstance(third, int):
+        elif params[0] == None and params[1] == None and isinstance(params[2], int):
             cursor.execute('''UPDATE tab_1 SET col_1=77 WHERE id=3''')
-    conn.commit()
+        conn.commit()
 
-base = Base(34)
+base = Base()
+base.method(None, None, 100)
 print(cursor.execute("""SELECT * FROM tab_1""").fetchall())
 
